@@ -1,0 +1,130 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+    background-color: #121212; /* Fondo oscuro */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 4rem 0;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #2ab3dd;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.4rem;
+    margin: 0.5rem 0 0;
+    font-weight: 300;
+}
+
+
+/* cajitass */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.cajitas {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 2rem;
+    width: 300px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;  /* Espacio entre cajitass */
+}
+
+.cajitas:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.cajitas h3 {
+    font-size: 2rem;
+    color: #2ab3dd;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.cajitas p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1rem;
+    color: #eeeeee;
+}
+
+/* Botones de Ver más */
+.boton {
+    text-decoration: none;
+    background:#2ab3dd;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    margin-top: 10px;  /* Separación superior para el botón */
+    display: inline-block;
+}
+
+.boton:hover {
+    background: #ffc107;
+    transform: scale(1.05);
+}
+
+/* Fondo de video */
+#backgroundVideoContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegúrate de que el video esté detrás de los demás elementos */
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el fondo */
+    transform: translate(-50%, -50%); /* Centra el video */
+    filter: brightness(90%); /* Oscurecer el video */
+}
+
+/* Sección Contacto */
+#contacto {
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    background-color: #212121; /* Fondo oscuro */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}

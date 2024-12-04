@@ -1,0 +1,11 @@
+# Archivos de configuración del sistema
+*.json
+*.log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación o temporales
+node_modules/
+dist/
